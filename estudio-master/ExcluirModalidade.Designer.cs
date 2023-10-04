@@ -30,9 +30,9 @@ namespace estudio
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +48,16 @@ namespace estudio
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modalidades";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(107, 127);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(351, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Excluir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // comboBox1
             // 
@@ -66,15 +76,6 @@ namespace estudio
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Descricao:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(107, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(351, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // ExcluirModalidade
             // 

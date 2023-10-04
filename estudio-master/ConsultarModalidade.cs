@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Estudio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,25 @@ namespace estudio
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Modalidade modalidade = new Modalidade(comboBox1.Text);
+            if (e.KeyChar == 13)
+            {
+                if (modalidade.consultarBoolean())
+                {
+                    MessageBox.Show("Metodo já está cadastrado!");
+                }
+                else
+                {
+                    textBox2.Focus();
+                }
+
+                DAO_Conexao.con.Close();
+            }
 
         }
 

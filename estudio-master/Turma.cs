@@ -32,7 +32,7 @@ namespace estudio
 
         }
 
-        public bool cadastrarTurma()
+        /*public bool cadastrarTurma()
         {
 
         }
@@ -50,7 +50,7 @@ namespace estudio
         public MySqlDataReader consultarTurma01()
         {
 
-        }
+        }*/
     }
 
  

@@ -19,7 +19,7 @@ namespace estudio
             InitializeComponent();
             WindowState = FormWindowState.Maximized;
             Modalidade con_mod = new Modalidade();
-            MySqlDataReader r = con_mod.consultarTodasModalidade();
+            MySqlDataReader r = con_mod.ConsultarTodasModalidades();
             while (r.Read())
                 dataGridView1.Rows.Add(r["descricaoModalidade"].ToString());
             DAO_Conexao.con.Close();

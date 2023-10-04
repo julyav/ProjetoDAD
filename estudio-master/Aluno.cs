@@ -264,6 +264,7 @@ namespace estudio
             {
                 DAO_Conexao.con.Open();
                 MySqlCommand consulta = new MySqlCommand("select * from Estudio_Aluno where CPFAluno='" + cpf + "'", DAO_Conexao.con);
+                Console.WriteLine("select * from Estudio_Aluno where CPFAluno='" + cpf + "'");
                 MySqlDataReader resultado = consulta.ExecuteReader();
                 if (resultado.Read())
                 {

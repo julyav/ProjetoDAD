@@ -97,6 +97,7 @@ namespace estudio
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(72, 54);
+            this.maskedTextBox1.Mask = "000.000.000-00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(345, 20);
             this.maskedTextBox1.TabIndex = 25;
