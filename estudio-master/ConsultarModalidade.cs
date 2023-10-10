@@ -54,7 +54,7 @@ namespace estudio
 
         private void ConsultarModalidade_Load(object sender, EventArgs e)
         {
-
+               
         }
     }
 }
