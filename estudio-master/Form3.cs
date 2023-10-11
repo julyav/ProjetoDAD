@@ -17,9 +17,9 @@ namespace estudio
             InitializeComponent();
         }
 
-        private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Aluno aluno = new Aluno(maskedTextBox1.Text);
+            Aluno aluno = new Aluno(textBox1.Text);
 
             if (e.KeyChar == 13)
             {
@@ -38,7 +38,7 @@ namespace estudio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Aluno aluno = new Aluno(maskedTextBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, textBox10.Text, textBox11.Text);
+            Aluno aluno = new Aluno(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, textBox10.Text, textBox11.Text);
 
 
 
@@ -65,15 +65,10 @@ namespace estudio
 
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Aluno aluno = new Aluno(maskedTextBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, textBox10.Text, textBox11.Text);
+            Aluno aluno = new Aluno(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, textBox10.Text, textBox11.Text);
             if (aluno.atualizarAluno())
             {
                 MessageBox.Show("Atualizado com Sucesso");
@@ -85,6 +80,11 @@ namespace estudio
         }
 
         private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
